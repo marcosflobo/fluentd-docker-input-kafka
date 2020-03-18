@@ -23,9 +23,9 @@ example, the topic name is `mytopic`, so, in the match tag you see `<match mytop
 
 # Steps
 
-##1. Run Kafka
+## 1. Run Kafka
 We will use the Kafka version 2.11. Please download it from https://kafka.apache.org/ and follow the instructions of
-the [quickstart](https://kafka.apache.org/quickstart) until the step of send some messages. Let's do it here anyway.
+the [quickstart](https://kafka.apache.org/quickstart) until the step of "send some messages". Let's do it here anyway.
 
 Move your shell to the directory where you downloaded and unziped the Kafka.
 
@@ -43,7 +43,7 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
 ```
 By the moment, we are good with Kafka, let's continue with the Fluentd.
 
-##2. Run Fluentd
+## 2. Run Fluentd
 We will use Fluentd version 1.7
 
 Move your shell where you have clone`d this repository.
@@ -89,7 +89,7 @@ And you should see an output like
 ```
 This is good, and it will stay there until we send some messages to Kafka. Let's do it then!
 
-##3. Verify it's working!
+## 3. Verify it's working!
 Now, the expected behavior is that:
 1. We send messages to Kafka and
 2. We can see them in the container standard output
